@@ -13,6 +13,11 @@ h1{
     padding-top: 40px;
 
 }
+a {
+    font-family: 'Manrope', sans-serif;
+    color: whitesmoke;
+    
+}
 
 
 :root{
@@ -54,7 +59,15 @@ transform: rotate(-180deg);
     width: 100%;
     top: 0;
     left: 0;
+
+    height: 10rem;
+    
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255,255,255,.05);
+    transition: height .5s ease;
 }
+
+
 .blue-square{
 	background: rgba(4, 35, 96, 1);
 
@@ -68,8 +81,7 @@ transform: rotate(-180deg);
 .nav{
     display: flex;
     justify-content: space-between;
-    
-   
+    background: linear-gradient(200,200,15%);
     margin-top: 20px;
 }
 .nav-link{
@@ -171,8 +183,12 @@ display: grid;
 place-content: center;
 place-items: center;
 background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/estudio.jpg');
-background-repeat: no-repeat;
-background-size: 1400px;
+  background-repeat: no-repeat;
+   background-position: center center;
+   
+   background-attachment: fixed; 
+   background-size: cover;
+   background-blend-mode: all;
 }
 .miembros{
    height: 150vh;
@@ -183,7 +199,10 @@ background-size: 1400px;
    padding-right: 20px;
    background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/pintura1.jpeg');
    background-repeat: no-repeat;
-   background-size: 1400px;
+   background-position: center center;
+   
+   background-attachment: fixed; 
+   background-size: cover;
    background-blend-mode: all;
 }
 
@@ -353,6 +372,37 @@ background-size: 1400px;
     .nav-menu_visible{
      left: 0;
     }
+
+.sobreNosotros{
+height: 150vh;
+width: 100%;
+display: grid;
+place-content: center;
+place-items: center;
+background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/estudio.jpg');
+  background-repeat: no-repeat;
+   background-position: center center;
+   
+   background-attachment: fixed; 
+   background-size: cover;
+   background-blend-mode: all;
+}
+.miembros{
+   height: 150vh;
+   width: 100%;
+   display: grid;
+   place-content: right;
+   place-items: center;
+   padding-right: 20px;
+   background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/pintura1.jpeg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   
+   background-attachment: fixed; 
+   background-size: cover;
+   background-blend-mode: all;
+}
+
 
 }
 
