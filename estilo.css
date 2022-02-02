@@ -185,22 +185,94 @@ display: grid;
 
 place-content: center;
 place-items: center;
-background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/estudio.jpg');
+background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/estudio2.jpg');
+
   background-repeat: no-repeat;
    background-position: center center;
    
    background-attachment: fixed; 
    background-size: cover;
+
    
 }
 
 .contenido-nosotros{
     font-size: 30px;
     color:  whitesmoke;
-    font-family: 'Manrope', sans-serif, bold;
+   
     justify-content: center;
     padding-bottom: 330px;
+
+  text-align: left;
+  justify-content: left;
+
+; }
+
+.titulo-nosotros {
+  font-size: 20px;
+   font-family: 'Montserrat', sans-serif, bold;
+  grid-area: titulo-nosotros;
+  justify-content: center;
+  text-align: center;
+  padding-right: 10px;}
+
+.texto-nosotros{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+     font-family: 'Montserrat', sans-serif;
 }
+
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+
+}
+
+.btn {
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 1.25rem;
+  position: relative;
+  margin: 32px;
+    
+}
+/* Button 2 */
+
+.btn-2 {
+  color: rgba(4, 35, 96, 1);
+}
+
+.btn-2::after,
+.btn-2::before {
+  border: 3px solid rgba(4, 35, 96, 1);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-2:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn-2:hover::before {
+  transform: translate(5px, 5px);
+}
+
 
 .miembros{
    height: 150vh;
@@ -285,7 +357,7 @@ footer h6:after {
     bottom: -20px;
 }
      .btn-footer {
-                 color: grey;
+                 color: blue;
               
                 text-decoration: none;
                 border: 1px solid;
@@ -516,7 +588,7 @@ width: 100%;
 display: grid;
 place-content: center;
 place-items: center;
-background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/estudio.jpg');
+background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/estudio2.jpg');
   background-repeat: no-repeat;
    background-position: center center;
    
@@ -530,9 +602,36 @@ background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84
     color:  whitesmoke;
     font-family: 'Manrope', sans-serif, bold;
     justify-content: center;
-    padding-bottom: 330px;
+    padding-top: 600px;
     text-align: center;
     margin: 40px;
+}
+
+.contenido-nosotros{
+    font-size: 30px;
+    color:  whitesmoke;
+   
+    justify-content: center;
+    padding-bottom: 330px;
+
+  text-align: left;
+  justify-content: left;
+
+; }
+
+.titulo-nosotros {
+  font-size: 20px;
+   font-family: 'Montserrat', sans-serif, bold;
+  grid-area: titulo-nosotros;
+  justify-content: center;
+  text-align: center;
+  padding-right: 10px;}
+
+.texto-nosotros{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+     font-family: 'Montserrat', sans-serif;
 }
 
 .miembros{
