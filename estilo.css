@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
-
+#desired-element { z-index: 99 !important; }
 
 *{
     margin: 0;
@@ -40,7 +40,12 @@ body{
 
 }
 
-
+.col-50 {
+    width: 80%;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    position: relative;z-index: 900;
+}
 
 
 
@@ -82,8 +87,10 @@ transform: rotate(-180deg);
 }
 .nav{
     display: flex;
+     z-index: -1;
     justify-content: space-between;
-    background: linear-gradient(200,200,15%);
+    background: rgb(33,73,130);
+    background: linear-gradient(180deg, rgba(33,73,130,1) 0%, rgba(33,73,130,0.48783263305322133) 77%, rgba(33,73,130,0.06206232492997199) 100%);
     margin-top: 20px;
 }
 .nav-link{
@@ -199,7 +206,7 @@ background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84
 .contenido-nosotros{
     font-size: 30px;
     color:  whitesmoke;
-   
+    padding-top: 600px;
     justify-content: center;
     padding-bottom: 330px;
 
@@ -281,17 +288,18 @@ background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84
    place-content: right;
    place-items: top;
    text-align: center;
-
    padding-right: 20px;
    background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84%, rgba(188, 200, 217, 0) 80.88%),url('./images/pintura1.jpeg');
    background-repeat: no-repeat;
    background-position: center center;
-   
    background-attachment: fixed; 
    background-size: cover;
    background-blend-mode: all;
 }
 
+.titulo-miembros{
+    color: rgba(4, 35, 96, 1);
+}
 
 .areaDePractica{
    height: 150vh;
@@ -338,7 +346,7 @@ background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84
      footer {
             color: grey;
      }
-     footer p,  {
+     footer p  {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
 }
@@ -416,6 +424,10 @@ footer ul  li a{
     height: 100%;
     }
     
+
+
+
+
 
 
 /* MOBILE */
@@ -610,7 +622,7 @@ background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84
 .contenido-nosotros{
     font-size: 30px;
     color:  whitesmoke;
-   
+    padding-top: 1000px;
     justify-content: center;
     padding-bottom: 330px;
 
@@ -631,6 +643,7 @@ background: linear-gradient(180deg, #214982 10%, rgba(111, 137, 174, 0.29) 55.84
     padding: 20px;
     margin: 20px;
     text-align: center;
+    margin: 200px;
      font-family: 'Montserrat', sans-serif;
 }
 
